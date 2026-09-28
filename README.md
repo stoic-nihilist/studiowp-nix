@@ -23,7 +23,7 @@ nix build
 
 ```nix
 # flake.nix
-inputs.studio-wp.url = "github:stoic-nihilist/<repo>";
+inputs.studio-wp.url = "github:stoic-nihilist/studiowp-nix";
 ```
 
 ```nix

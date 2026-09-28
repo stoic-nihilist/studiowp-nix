@@ -51,6 +51,7 @@ outputs = { self, nixpkgs }:
         cp -r ${studiowp-unwrapped}/usr/share/pixmaps $out/share/
         chmod -R u+w $out/share/applications
         sed -i -E "s|^Exec=[^ ]+|Exec=$out/bin/studio|" $out/share/applications/*.desktop
+        sed -i -E "s|^Icon=.*|Icon=$out/share/pixmaps/studio.png|" $out/share/applications/*.desktop
         '';
     };
 
